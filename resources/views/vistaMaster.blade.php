@@ -33,7 +33,7 @@
 					  	<option value="rojo">Rojo</option>
 					  	<option value="azulClaro">Azul Claro</option>
 					  	<option value="morado">Morado</option>
-					  	<option value="pistacho">Pistacho?</option>
+					  	<option value="pistacho">Pistacho</option>
 					  	<option value="gris">Gris</option>
 					</select>
 				@endfor
