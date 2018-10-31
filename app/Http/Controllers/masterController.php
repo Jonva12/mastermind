@@ -16,6 +16,9 @@ class masterController extends Controller
     	$intentos = $request->input('intentos');
     	$arrayColores = array('azul','amarillo','verde','rojo','azulClaro','morado','pistacho','gris');
     	$opciones2=$arrayColores;
+    	if ($clave > $colores && $repetidos == "No") {
+    		return view('welcome', ["mensaje" => "No puedes poner un valor de clave menor que el valor de los colores y a la vez elegir que no se repitan colores. Vuelve a intentarlo."]);
+    	}
 
     	$arrayClave[0]="sad";
     	array_splice($arrayColores, $colores);

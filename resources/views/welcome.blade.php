@@ -8,6 +8,9 @@
     </head>
     <body>
         <h1>Bienvenido/a al Mastermind</h1>
+        @if(isset($mensaje))
+        <h2>{{$mensaje}}</h2>
+        @endif
         <form action="masterController" method="get">
         Jugador/a:<input type="text" name="nombre"></br>
         Longitud de la clave:</br>
